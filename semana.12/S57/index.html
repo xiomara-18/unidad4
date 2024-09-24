@@ -4,8 +4,176 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Do</title>
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-    <script type="module" src="./assets/js/script.js"></script>
+    <!--BOOTSTRAP CDN-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
   </head>
-  <body></body>
+  <body>
+    <h1 class="tittle" style="text-align: center">Sesion 57</h1>
+    <!--Containers-->
+    <div class="container text-white bg-info">
+      <p>.container</p>
+    </div>
+    <div class="container-fluid text-white bg-success">
+      <p>.container-fluid</p>
+    </div>
+    <!--Colores en Bootstrap-->
+    <h2>Colores en Bootstrap</h2>
+    <p class="text-primary bg-warning">.text-primary</p>
+    <p class="text-secondary bg-black">.text-secondary</p>
+    <p class="text-success bg-dark">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning bg-secondary">.text-warning</p>
+    <p class="text-info bg-primary">.text-info</p>
+    <p class="text-light bg-info">.text-light</p>
+    <p class="text-dark bg-body">.text-dark</p>
+    <p class="text-body pe-3">.text-body</p>
+    <p class="text-black bg-danger mb-2">.text-black</p>
+    <p class="text-white bg-success m-5">.text-white</p>
+
+    <!--Alineacion de texto-->
+    <p class="text-start text-primary">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+    <p class="text-center text-secondary">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+    <p class="text-end text-success">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+    </p>
+
+    <!--Displays para el tamaño de la fuente-->
+    <h1 class="text-primary display-1">.display-1</h1>
+    <h1 class="text-secondary display-2">.display-2</h1>
+    <h1 class="text-info display-3">.display-3</h1>
+    <h1 class="text-success display-4">.display-4</h1>
+    <h1 class="text-danger display-5">.display-5</h1>
+    <h1 class="text-warning display-6">.display-6</h1>
+    <h1>.h1-normal</h1>
+    <hr />
+    <!--Formulario-->
+    <h1>Forms</h1>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link" href="#">Features</a>
+            <a class="nav-link" href="#">Pricing</a>
+            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <form class="container my-5">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <select class="form-select" aria-label="Default select example">
+        <option selected>Open this select menu</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+      </select>
+      <div class="form-check form-switch">
+        <input
+          class="form-check-input"
+          type="checkbox"
+          role="switch"
+          id="flexSwitchCheckDefault"
+        />
+        <label class="form-check-label" for="flexSwitchCheckDefault"
+          >Default switch checkbox input</label
+        >
+      </div>
+      <fieldset class="row mb-3">
+        <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios1"
+              value="option1"
+              checked
+            />
+            <label class="form-check-label" for="gridRadios1">
+              First radio
+            </label>
+          </div>
+          <div class="form-check">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios2"
+              value="option2"
+            />
+            <label class="form-check-label" for="gridRadios2">
+              Second radio
+            </label>
+          </div>
+          <div class="form-check disabled">
+            <input
+              class="form-check-input"
+              type="radio"
+              name="gridRadios"
+              id="gridRadios3"
+              value="option3"
+              disabled
+            />
+            <label class="form-check-label" for="gridRadios3">
+              Third disabled radio
+            </label>
+          </div>
+        </div>
+      </fieldset>
+      <button type="submit" class="btn btn-success">Submit</button>
+    </form>
+
+    <!--Usando background-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
